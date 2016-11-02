@@ -220,6 +220,7 @@
                         android:id="@+id/questionFourOptionOne"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="checkQuestionFour"
                         android:text="@string/question_four_option_one" />
 
                     <RadioButton
@@ -233,18 +234,42 @@
                         android:id="@+id/questionFourOptionThree"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="checkQuestionFour"
                         android:text="@string/question_four_option_three" />
 
                     <RadioButton
                         android:id="@+id/questionFourOptionFour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="checkQuestionFour"
                         android:text="@string/question_four_option_four" />
 
                 </RadioGroup>
 
 
             </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutForQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffe0b2">
+
+            <TextView
+                style="@style/QuestionHeader"
+                android:text="@string/question_five_header"/>
+            <TextView
+                style="@style/QuestionText"
+                android:text="@string/question_five_text"/>
+
+            <EditText
+                android:id="@+id/questionFiveEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
 
 
         </LinearLayout>

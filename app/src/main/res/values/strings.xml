@@ -32,6 +32,10 @@
     <string name="question_four_option_three">Norepinephrine</string>
     <string name="question_four_option_four">Epinephrine</string>
 
+    <!--Question #5-->
+    <string name="question_five_header">Question #5</string>
+    <string name="question_five_text">The _______ valve separates the atrium and ventricle on the right side of the heart.</string>
+
     <!--Buttons text-->
     <string name="submit_button_text">submit answers</string>
     <string name="reset_button_text">reset</string>
