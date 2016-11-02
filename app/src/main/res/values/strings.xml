@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <!--Question #1-->
+    <string name="question_one_header">Question #1</string>
+    <string name="question_one_text">Signs and symptoms of cardiac tamponade include which of the following:</string>
+    <!--correct answer-->
+    <string name="question_one_option_one">Dyspnea</string>
+    <string name="question_one_option_two">Decreased pulmonary arterial pressure</string>
+    <!--correct answer-->
+    <string name="question_one_option_three">Tachycardia</string>
+    <!--Question #2-->
+    <string name="question_two_header">Question #2</string>
+    <string name="question_two_text">Healthy food choices include:</string>
+    <string name="question_two_option_one">Six pounds of bacon</string>
+    <string name="question_two_option_two">A rainbow of Skittles</string>
+    <!--correct answer-->
+    <string name="question_two_option_three">A variety of food choices</string>
+    <!--correct answer-->
+    <string name="question_two_option_four">Fresh fruits and vegetables</string>
+    <!--Question #3-->
+    <string name="question_three_header">Question #3</string>
+    <string name="question_three_text">The World Health Organization recommends that health care workers wear gloves when giving intramuscular injections.</string>
+    <string name="question_three_option_one">True</string>
+    <!--correct answer-->
+    <string name="question_three_option_two">False</string>
+    <!--Question #4-->
+    <string name="question_four_header">Question #4</string>
+    <string name="question_four_text">Considered the only pure Alpha agonist:</string>
+    <string name="question_four_option_one">Labetelol</string>
+    <!--correct answer-->
+    <string name="question_four_option_two">Phenylephrine</string>
+    <string name="question_four_option_three">Norepinephrine</string>
+    <string name="question_four_option_four">Epinephrine</string>
+
+    <!--Buttons text-->
+    <string name="submit_button_text">submit answers</string>
+    <string name="reset_button_text">reset</string>
+
+
 </resources>

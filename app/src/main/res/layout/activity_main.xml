@@ -19,11 +19,11 @@
 
             <TextView
                 style="@style/QuestionHeader"
-                android:text="Question #1" />
+                android:text="@string/question_one_header" />
 
             <TextView
                 style="@style/QuestionText"
-                android:text="Question text" />
+                android:text="@string/question_one_text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Right choice" />
+                    android:text="@string/question_one_option_one" />
             </LinearLayout>
 
             <LinearLayout
@@ -54,7 +54,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Wrong choice" />
+                    android:text="@string/question_one_option_two" />
             </LinearLayout>
 
             <LinearLayout
@@ -70,7 +70,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Right choice" />
+                    android:text="@string/question_one_option_three" />
             </LinearLayout>
 
 
@@ -81,11 +81,11 @@
 
             <TextView
                 style="@style/QuestionHeader"
-                android:text="Question #2" />
+                android:text="@string/question_two_header" />
 
             <TextView
                 style="@style/QuestionText"
-                android:text="Question text" />
+                android:text="@string/question_two_text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -100,7 +100,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:text="@string/question_two_option_one" />
             </LinearLayout>
 
             <LinearLayout
@@ -116,7 +116,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:text="@string/question_two_option_two" />
             </LinearLayout>
 
             <LinearLayout
@@ -130,9 +130,10 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Right choice" />
+                    android:text="@string/question_two_option_three" />
             </LinearLayout>
 
             <LinearLayout
@@ -148,7 +149,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Right choice" />
+                    android:text="@string/question_two_option_four" />
             </LinearLayout>
 
 
@@ -161,11 +162,11 @@
 
             <TextView
                 style="@style/QuestionHeader"
-                android:text="Question #3" />
+                android:text="@string/question_three_header" />
 
             <TextView
                 style="@style/QuestionText"
-                android:text="Question text" />
+                android:text="@string/question_three_text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -182,13 +183,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingRight="32dp"
-                        android:text="True" />
+                        android:text="@string/question_three_option_one" />
 
                     <RadioButton
                         android:id="@+id/questionThreeFalse"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="False" />
+                        android:text="@string/question_three_option_two" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -200,11 +201,11 @@
 
             <TextView
                 style="@style/QuestionHeader"
-                android:text="Question #4" />
+                android:text="@string/question_four_header" />
 
             <TextView
                 style="@style/QuestionText"
-                android:text="Question text" />
+                android:text="@string/question_four_text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -219,38 +220,53 @@
                         android:id="@+id/questionFourOptionOne"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Some choice" />
+                        android:text="@string/question_four_option_one" />
 
                     <RadioButton
                         android:id="@+id/questionFourOptionTwo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Right choice"
-                        android:onClick="checkQuestionFour"/>
+                        android:onClick="checkQuestionFour"
+                        android:text="@string/question_four_option_two" />
 
                     <RadioButton
                         android:id="@+id/questionFourOptionThree"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Some choice" />
+                        android:text="@string/question_four_option_three" />
 
                     <RadioButton
                         android:id="@+id/questionFourOptionFour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Some choice" />
+                        android:text="@string/question_four_option_four" />
 
                 </RadioGroup>
 
 
             </LinearLayout>
 
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp">
+
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="75dp"
                 android:onClick="onSubmitAnswersButtonClicked"
-                android:text="Submit Answers" />
+                android:text="@string/submit_button_text" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:onClick="onResetButtonClicked"
+                android:text="@string/reset_button_text" />
 
         </LinearLayout>
 

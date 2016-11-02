@@ -2,6 +2,7 @@ package com.example.android.quizapp;
 
 import java.text.NumberFormat;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,14 +43,21 @@ public class MainActivity extends AppCompatActivity {
         Log.v("showScore", "questionTwo: " + questionTwoScore);
         Log.v("showScore", "Score: " + userScore);
 
-        //Shows the user their score
-        Toast toast = Toast.makeText(this, "Great job, you scored " +
-                userScore, Toast.LENGTH_SHORT);
-        toast.show();
+        //Shows the user their score. The toast changes depending on how the user scored.
+        if (calculateScore(view) > 70) {
+            Toast toast = Toast.makeText(this, "Great job, you scored " +
+                    userScore, Toast.LENGTH_SHORT);
+            toast.show();
+        } else {
+            Toast toast = Toast.makeText(this, "Room for improvement! You scored " +
+                    userScore, Toast.LENGTH_SHORT);
+            toast.show();
+        }
     }
 
     /**
      * This method checks each question and calculates the score
+     *
      * @return the score divided by number of questions in quiz
      */
     private double calculateScore(View view) {
@@ -75,6 +83,19 @@ public class MainActivity extends AppCompatActivity {
         score = score / numberOfQuestions;
 
         return score;
+    }
+
+    /**
+     * This method resets all the answer scores and restarts the activity when the "reset" button
+     * is clicked
+     */
+    public void onResetButtonClicked(View view) {
+        questionOneScore = false;
+        questionTwoScore = false;
+        questionThreeScore = false;
+        questionFourScore = false;
+        finish();
+        startActivity(getIntent().addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
     }
 
     /**
@@ -121,26 +142,28 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method checks the third question.
+     */
     public void checkQuestionThree(View view) {
-        RadioButton questionThreeTrue = (RadioButton) findViewById(R.id.questionThreeTrue);
         RadioButton questionThreeFalse = (RadioButton) findViewById(R.id.questionThreeFalse);
 
         questionThreeScore = questionThreeFalse.isChecked();
 
     }
 
+    /**
+     * This method checks the fourth question.
+     */
     public void checkQuestionFour(View view) {
-//        RadioButton optionOne = (RadioButton) R.id.questionFourOptionOne;
-//        RadioButton optionTwo = (RadioButton) R.id.questionFourOptionOne;
-//        RadioButton optionThree = (RadioButton) R.id.questionFourOptionOne;
-//        RadioButton optionFour = (RadioButton) R.id.questionFourOptionOne;
 
         //Is an answer selected?
         boolean selected = ((RadioButton) view).isChecked();
 
+        //The second option is correct
         switch (view.getId()) {
             case R.id.questionFourOptionOne:
-               //do nothing
+                //do nothing
                 break;
             case R.id.questionFourOptionTwo:
                 if (selected) {
