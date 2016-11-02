@@ -31,13 +31,14 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/questionOneCheckBoxOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:text="Right choice" />
             </LinearLayout>
 
             <LinearLayout
@@ -46,13 +47,14 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/questionOneCheckBoxTwo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:text="Wrong choice" />
             </LinearLayout>
 
             <LinearLayout
@@ -61,28 +63,14 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/questionOneCheckBoxThree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:text="Right choice" />
             </LinearLayout>
 
 
@@ -105,6 +93,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/questionTwoCheckBoxOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -120,6 +109,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/questionTwoCheckBoxTwo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -135,13 +125,14 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/questionTwoCheckBoxThree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:text="Right choice" />
             </LinearLayout>
 
             <LinearLayout
@@ -150,13 +141,14 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/questionTwoCheckBoxFour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:text="Right choice" />
             </LinearLayout>
 
 
@@ -180,60 +172,84 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/questionThreeTrue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="32dp"
+                        android:text="True" />
+
+                    <RadioButton
+                        android:id="@+id/questionThreeFalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="False" />
+                </RadioGroup>
             </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- Question #4 -->
+        <LinearLayout style="@style/LinearLayoutForQuestion">
+
+            <TextView
+                style="@style/QuestionHeader"
+                android:text="Question #4" />
+
+            <TextView
+                style="@style/QuestionText"
+                android:text="Question text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Some choice" />
+                    <RadioButton
+                        android:id="@+id/questionFourOptionOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Some choice" />
+
+                    <RadioButton
+                        android:id="@+id/questionFourOptionTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Right choice"
+                        android:onClick="checkQuestionFour"/>
+
+                    <RadioButton
+                        android:id="@+id/questionFourOptionThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Some choice" />
+
+                    <RadioButton
+                        android:id="@+id/questionFourOptionFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Some choice" />
+
+                </RadioGroup>
+
+
             </LinearLayout>
 
-            <LinearLayout
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Some choice" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Some choice" />
-            </LinearLayout>
+                android:onClick="onSubmitAnswersButtonClicked"
+                android:text="Submit Answers" />
 
 
         </LinearLayout>
