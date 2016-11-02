@@ -36,6 +36,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    style="@style/QuestionOptions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_one_option_one" />
@@ -52,6 +53,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    style="@style/QuestionOptions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_one_option_two" />
@@ -68,6 +70,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    style="@style/QuestionOptions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_one_option_three" />
@@ -98,6 +101,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    style="@style/QuestionOptions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_two_option_one" />
@@ -114,6 +118,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    style="@style/QuestionOptions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_two_option_two" />
@@ -131,6 +136,7 @@
 
                 <TextView
                     android:id="@+id/textView"
+                    style="@style/QuestionOptions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_two_option_three" />
@@ -147,6 +153,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    style="@style/QuestionOptions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_two_option_four" />
@@ -260,16 +267,17 @@
 
             <TextView
                 style="@style/QuestionHeader"
-                android:text="@string/question_five_header"/>
+                android:text="@string/question_five_header" />
+
             <TextView
                 style="@style/QuestionText"
-                android:text="@string/question_five_text"/>
+                android:text="@string/question_five_text" />
 
             <EditText
                 android:id="@+id/questionFiveEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"/>
+                android:inputType="text" />
 
 
         </LinearLayout>

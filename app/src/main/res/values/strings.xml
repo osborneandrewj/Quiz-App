@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quiz App</string>
+    <string name="app_name">Critical Care Quiz</string>
     <!--Question #1-->
     <string name="question_one_header">Question #1</string>
     <string name="question_one_text">Signs and symptoms of cardiac tamponade include which of the following:</string>
